@@ -16,6 +16,16 @@ Identifying the variants of DNA sequences sensitively and accurately is an impor
 
 Clairvoyante is published in [Nature Communications](https://www.nature.com/articles/s41467-019-09025-z)
 
+## Project documentation
+
+Detailed repository documentation has been added under [docs/README.md](docs/README.md). It covers:
+
+- architecture and component boundaries
+- training and inference data flow
+- model structure and training behavior
+- CLI/script reference
+- runtime assumptions, limitations, and maintenance notes
+
 ## A PyTorch version of Clairvoyante
 A PyTorch implementation of Clairvoyante is available at [HKU-BAL/Clairvoyante-PyTroch](https://github.com/HKU-BAL/Clairvoyante-PyTroch).
 
@@ -345,4 +355,3 @@ Clairvoyante network version 3 can only output one of the two possible alternati
 In rare cases, the model training will stuck early at a local optimal and cannot be further optimized without a higher learning rate. As we observed ,the problem only happens at the very beginning of model training, and can be predicated if the loss remains stable in the first few training epochs.  
 
 ***
-
